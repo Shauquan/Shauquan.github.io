@@ -3,7 +3,8 @@ Shauquan Richardson sdrichardson6@my.waketech.edu
 This is my school account
 This repository will hold assignments
 
-#About Me  
+#About Me 
+
 ##My Interests  
 * Sports  
   * Wrestling
