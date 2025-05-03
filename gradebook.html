@@ -58,7 +58,7 @@ function fetchGradeData() {
                 console.error(`Could not get grades.
                     Status: ${xhr.status}`);
             }
-            // And then csll the function to update the HTML with our data
+            // And then call the function to update the HTML with our data
             populateGradebook(JSON.parse(xhr.responseText));
             }
     }.bind(this);
@@ -67,7 +67,7 @@ function fetchGradeData() {
 }
 
 function populateGradebook(data) {
-    // This function will take the fetched grade date data and populatevthe table
+    // This function will take the fetched grade date data and populate the table
     console.log("Populating gradebook with data:", data);
     let tableElm = document.getElementById("gradebook"); // Get the gradebook table element
         data.forEach(function(assignment){ // For each row data we're passed in
