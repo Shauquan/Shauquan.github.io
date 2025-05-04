@@ -1,28 +1,13 @@
 <!DOCTYPE html>
-      <thead>
-          <tr>
-              <th>Student Name</th>
-              <th>Assignment 1</th>
-              <th>Assignment 2</th>
-              <th>Assignment 3</th>
-             <!-- Add more assignment columns as needed -->
-          </tr>
-      </thead>
-      <tbody>
-          <! -- Rows will be populated dynamically with JavaScript -->
-      </tbody>
-    <script src="gradebook.html"></script>  
-</body>
-</html>
 
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title Gradebook</title>
+    <meta> charset="UTF-8">
+    <meta> name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradebook</title>
     <style>
-      <table> {
+      table {
           width: 100%;
           border-collapse: collapse;
       }
@@ -39,22 +24,7 @@
 <body>
     <h1>Gradebook</h1>
     <table id="gradebook">
-      <thead>
-          <tr>
-              <th>Student Name</th>
-              <th>Assignment 1</th>
-              <th>Assignment 2</th>
-              <th>Assignment 3</th>
-             <!-- Add more assignment columns as needed -->
-          </tr>
-      </thead>
-      <tbody>
-          <! -- Rows will be populated dynamically with JavaScript -->
-      </tbody>
-    </table>
-    <script src="gradebook.html"></script>  
-</body>
-       function fetchGradeData() {
+        function fetchGradeData() {
     // This function will query the PostgreSQL database and return grade data
     console.log("Fetching grade data...");
     // Create a new request for HTTP data
@@ -103,4 +73,19 @@
             tableElm.appendChild(row);
         });
 }
+      <thead>
+          <tr>
+              <th>Student Name</th>
+              <th>Assignment 1</th>
+              <th>Assignment 2</th>
+              <th>Assignment 3</th>
+             <!-- Add more assignment columns as needed -->
+          </tr>
+      </thead>
+      <tbody>
+          <! -- Rows will be populated dynamically with JavaScript -->
+      </tbody>
+    </table>
+    <script src="gradebook.html"></script>  
+</body>
 </html>
