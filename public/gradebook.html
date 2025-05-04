@@ -37,11 +37,8 @@
           <! -- Rows will be populated dynamically with JavaScript -->
       </tbody>
     </table>
-    <script src="gradebook.html"></script>  
-</body>
-</html>
-
-        function fetchGradeData() {
+    <script src="gradebook.html">
+                function fetchGradeData() {
     // This function will query the PostgreSQL database and return grade data
     console.log("Fetching grade data...");
     // Create a new request for HTTP data
@@ -65,6 +62,10 @@
     xhr.open("get", apiRoute, true);
     xhr.send();
 }
+    </script>  
+</body>
+</html>
+
 
         function populateGradebook(data) {
     // This function will take the fetched grade date data and populatevthe table
